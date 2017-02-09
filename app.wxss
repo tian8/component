@@ -1,0 +1,6 @@
+/**app.wxss**/
+
+@import "components/wxui.wxss";
+@import "assets/style/base.wxss";
+@import "assets/style/wxcss.wxss";
+

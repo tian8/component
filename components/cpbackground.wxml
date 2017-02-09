@@ -1,0 +1,4 @@
+<template name="background">
+    <view  class="wxui-full {{visible ? 'visible' : 'hidden'}}" hidden="{{!visible}}">
+    </view>
+</template>

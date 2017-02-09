@@ -1,0 +1,12 @@
+<template name="dialog">
+    <view class="wxui-full {{visible ? 'visible':'hidden'}}" hidden="{{!visible}}">
+        <view class="wxui-dialog-box wxui-dialog {{visible ? 'visible':'hidden'}}" hidden="{{!visible}}">
+            <view class="wxui-dialog-title">{{title}}</view>
+            <view class="wxui-dialog-content">{{content}}</view>
+            <view class="wxui-dialog-ft">
+                <view class="wxui-dialog-btn wxui-dialog-btn-default" wx:if="{{showCancel}}" bindtap="{{dialogCancel}}">{{cancelText}}</view>
+                <view class="wxui-dialog-btn wxui-dialog-btn-primary" bindtap="{{dialogConfirm}}">{{confirmText}}</view>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,48 @@
+<!--pages/rater/index.wxml-->
+<import src="../../components/rater.wxml"/>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Rater</view>
+        <view class="page__desc">
+            评分组件
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">默认评分</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">默认是5分</view>
+                <view class="weui-cell__ft">
+                	<template is="rater" data="{{id,...wxui.rater.star }}"/>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">改变颜色</view>
+                <view class="weui-cell__ft">
+                    <template is="rater" data="{{id,...wxui.rater.changeColor }}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">样式改变</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">爱</view>
+                <view class="weui-cell__ft">
+                    <template is="rater" data="{{id,...wxui.rater.loving }}"/>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">飞机</view>
+                <view class="weui-cell__ft">
+                    <template is="rater" data="{{id,...wxui.rater.airplane }}"/>
+                </view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd">微笑</view>
+                <view class="weui-cell__ft">
+                    <template is="rater" data="{{id,...wxui.rater.smilies }}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
