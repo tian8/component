@@ -2,9 +2,9 @@
  ----
  ## components
  ----
-  * background - 背景幂
-  * dialog - 弹出框
-  * rater - 评分组件
+  * background ——— 背景幂
+  * dialog  ——— 弹出框
+  * rater ——— 评分组件
  ----
  ### 项目截图
  ----
